@@ -1,0 +1,173 @@
+site_name: Hyacinth's Wiki
+site_url: https://Annihilation1019.github.io
+repo_name: Annihilation1019/源码仓库
+repo_url: https://github.com/Annihilation1019/Annihilation1019.github.io.git
+copyright: Copyright © 2023 - 2024 by Hyacinth
+theme:
+  name: material
+  language: zh
+  favicon: img/hugeicons--repository.svg # 网站
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  # 字体
+  font:
+    code: cascadia code
+  # 图标
+  icon:
+    logo: simple/electron # 左上角
+    repo: fontawesome/brands/github-alt # 存储库
+    share: material/share # 分享
+    close: material/close # 清空搜索
+    top: octicons/move-to-top-16 # 返回顶部
+    tag: #标签
+      c: material/language-c
+      cpp: material/language-cpp
+      python: material/language-python
+      code: material/code-tags
+      embedded: fontawesome/solid/microchip
+      hardware: material/resistor-nodes
+      life: material/coffee
+      writing: material/pen
+
+    edit: material/file-edit # 编辑此页
+    view: material/file-eye # 查看源码
+    next: material/page-next # 下一页
+    previous: material/page-previous # 上一页
+    admonition: # 告诫
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    annotation: material/fountain-pen-tip
+
+  # 特性
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - content.action.edit # Edit on GitHub
+    - content.action.view # View source
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - navigation.indexes
+    - toc.follow
+
+# 插件
+plugins:
+  - blog
+  - tags
+  - search
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/Annihilation1019
+  tags:
+    C: c
+    C++: cpp
+    Python: python
+    嵌入式: embedded
+    硬件: hardware
+    编程: code
+    生活: life
+    随笔: writing
+
+markdown_extensions:
+  # Admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # Annotations
+  - attr_list
+  - md_in_html
+  # Bottons
+  - attr_list
+  # Content tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Tables
+  - tables
+  # Formatting
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # List
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # Content Tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+  # emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - 主页: index.md
+  - 编程:
+      - C语言:
+          - 快速上手:
+              - 一个完整的程序: coding/c/一个完整的程序.md
+              - 一些抽象概念: coding/c/抽象概念.md
+      - C++:
+          - coding/cpp/index.md
+          - 基础知识: coding/cpp/基础知识.md
+          - 变量与存储: coding/cpp/变量与存储.md
+          - 名称空间: coding/cpp/名称空间.md
+          - 函数: coding/cpp/函数.md
+          - C++中的类: coding/cpp/C++中的类.md
+          - 数组_指针与引用: coding/cpp/数组_指针与引用.md
+          - 其他补充: coding/cpp/其他补充.md
+      - 数据结构与算法: coding/other/数据结构与算法.md
+  - 硬件:
+      - 电路基本知识:
+          - null.md
+          - 电阻: null.md
+          - 电容: null.md
+          - 电感: null.md
+  - 嵌入式开发:
+      - stm32:
+          - HAL库: null.md
+      - ESP32: null.md
+      - 项目设计: null.md
+  - 博客:
+      - blog/index.md
