@@ -1,12 +1,13 @@
-site_name: Hyacinth's Wiki
+site_name: Hyacinmond's Wiki
 site_url: https://Annihilation1019.github.io
 repo_name: Annihilation1019/源码仓库
-repo_url: https://github.com/Annihilation1019/Annihilation1019.github.io.git
-copyright: Copyright © 2023 - 2024 by Hyacinth
+repo_url: https://github.com/Annihilation1019/Annihilation1019.github.io
+edit_uri: edit/main/docs/
+copyright: Copyright © 2023 - 2024 by Hyacinmond
 theme:
   name: material
   language: zh
-  favicon: img/hugeicons--repository.svg # 网站
+  favicon: img/icon/hugeicons--repository.svg # 网站
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -93,6 +94,8 @@ plugins:
   - blog
   - tags
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 extra:
   social:
